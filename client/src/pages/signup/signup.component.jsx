@@ -58,7 +58,7 @@ class SignUp extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
-      this.setState({ errors: nextProps.errors });
+      this.setState({ errors: nextProps.errors }); //for errors
     }
   }
 
