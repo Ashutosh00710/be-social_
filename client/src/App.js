@@ -5,10 +5,12 @@ import SignUp from "./pages/signup/signup.component.jsx";
 import Posts from "./pages/posts.component.jsx";
 import { default as Profile } from "./pages/profile.component";
 import { Route, Switch } from "react-router-dom";
+import Navbar from "./components/navbar/navbar.component";
 
 function App() {
   return (
     <>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={SignInSide} />
         <Route path="/signup" component={SignUp} />

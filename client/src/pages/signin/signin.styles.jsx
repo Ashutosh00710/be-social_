@@ -10,7 +10,7 @@ export const Img = styled.div`
 `;
 
 export const Ppr = styled.div`
-  margin: 130px 40px;
+  margin: 150px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,5 +18,5 @@ export const Ppr = styled.div`
 
 export const Form = styled.form`
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
 `;

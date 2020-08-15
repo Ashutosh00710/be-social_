@@ -24,8 +24,6 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 745,
     marginLeft: "auto",
     marginRight: "auto",
-    marginTop: "2%",
-    marginBottom: "2%",
   },
   media: {
     height: 0,
