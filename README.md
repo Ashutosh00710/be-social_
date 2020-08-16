@@ -16,10 +16,10 @@
 ## 👦🏻💻 Message from master branch
 
 Hey folks 👋🏻, If you have basic knowledge about
-M - MongoDB
-E - Express
-R - React
-N - Node
+#### M - MongoDB
+#### E - Express
+#### R - React
+#### N - Node
 you can contribute in this repository. If you have any innovative idea, you are most welcome. Come and build this together.
 
 ## Introduction to the Project 🖥🖱
