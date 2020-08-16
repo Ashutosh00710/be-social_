@@ -1,8 +1,8 @@
-# be-social [ A Social Network (Open for contribution) ]
+# be-social_ [ A Social Network (Open for contribution) ]
 
 ![Logo](https://github.com/Ashutosh00710/be-social_/blob/master/client/src/assets/cover.png)
 
-## 🔧 Technologies & Tools
+## 🔧 Tools & Technologies Used
 
 ![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E)
 ![](https://img.shields.io/badge/CSS-StyledComponents-informational?style=flat&logo=styled-components&logoColor=white&color=DB7093)
