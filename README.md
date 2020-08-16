@@ -11,5 +11,5 @@
 ![](https://img.shields.io/badge/StateManagement-Redux-informational?style=flat&logo=redux&logoColor=white&color=764ABC)
 ![](https://img.shields.io/badge/Database-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
 ![](https://img.shields.io/badge/Backend-Node.js-informational?style=flat&logo=node.js&logoColor=white&color=339933)
-![](https://img.shields.io/badge/PackageManager-Yarn-informational?style=flat&logo=yarn&logoColor=white&color=2C8EBB)
+![](https://img.shields.io/badge/PackageManager-Yarn(v1.19.2)-informational?style=flat&logo=yarn&logoColor=white&color=2C8EBB)
 
