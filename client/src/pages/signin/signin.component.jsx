@@ -74,7 +74,7 @@ class SignInSide extends React.Component {
           <Ppr>
             <Avatar style={{ margin: "10px", backgroundColor: "red" }} />
             <Typography component="h1" variant="h5">
-              Sign in
+              Sign In
             </Typography>
             <Form onSubmit={this.onSubmit}>
               <TextField
