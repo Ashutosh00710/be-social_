@@ -9,5 +9,5 @@
 ![](https://img.shields.io/badge/UI-React.js-informational?style=flat&logo=react&logoColor=white&color=61DAFB)
 ![](https://img.shields.io/badge/Styling-MaterialUI-informational?style=flat&logo=material-ui&logoColor=white&color=0081CB)
 ![](https://img.shields.io/badge/StateManagement-Redux-informational?style=flat&logo=redux&logoColor=white&color=764ABC)
-![](https://img.shields.io/badge/Database-MongoDG-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
+![](https://img.shields.io/badge/Database-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
 ![](https://img.shields.io/badge/Backend-Node.js-informational?style=flat&logo=node.js&logoColor=white&color=339933)
