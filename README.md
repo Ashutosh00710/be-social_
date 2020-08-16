@@ -1,4 +1,4 @@
-# be-social_ [ A Social Network (Open for contribution) ]
+# be-social\_ [ A Social Network (Open for contribution) ]
 
 ![Logo](https://github.com/Ashutosh00710/be-social_/blob/master/client/src/assets/cover.png)
 
@@ -11,5 +11,19 @@
 ![](https://img.shields.io/badge/StateManagement-Redux-informational?style=flat&logo=redux&logoColor=white&color=764ABC)
 ![](https://img.shields.io/badge/Database-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
 ![](https://img.shields.io/badge/Backend-Node.js-informational?style=flat&logo=node.js&logoColor=white&color=339933)
-![](https://img.shields.io/badge/PackageManager-Yarn(v1.19.2)-informational?style=flat&logo=yarn&logoColor=white&color=2C8EBB)
+![](<https://img.shields.io/badge/PackageManager-Yarn(v1.19.2)-informational?style=flat&logo=yarn&logoColor=white&color=2C8EBB>)
 
+## 👦🏻💻 Message from master branch
+
+Hey folks 👋🏻, If you have basic knowledge about
+M - MongoDB
+E - Express
+R - React
+N - Node
+you can contribute in this repository. If you have any innovative idea, you are most welcome. Come and build this together.
+
+## Introduction to the Project 🖥🖱
+
+be-social\_ is a kind of portfolio project from the student, by the student & for the student. This project aims to build a social media with basic purposes. Like post, like, comment, view profile, add experiences and a lot more. If you can give any kind of contribution, you are welcome and I will add your name in the contributors list.
+
+You can contact me on : Email - starcdwivedi@gmail.com
