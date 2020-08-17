@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Paper = styled.div`
-  margin-top: 5rem;
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
