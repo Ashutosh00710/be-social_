@@ -34,5 +34,6 @@ export const Option = styled(Link)`
 
 export const OptionContainer = styled.div`
   float: right;
+  display: flex;
   margin-top: 0.8rem;
 `;
