@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import SignInSide from "./pages/signin/signin.component.jsx";
 import SignUp from "./pages/signup/signup.component.jsx";
 import Posts from "./pages/posts.component.jsx";

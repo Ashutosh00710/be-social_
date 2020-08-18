@@ -17,7 +17,7 @@ export const ProfileContainer = styled(Card)`
 
 export const ProfilePic = styled.img`
   position: absolute;
-  top: 35%;
+  top: 33%;
   margin-left: 2rem;
   height: 8rem;
   width: 8rem;
