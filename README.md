@@ -16,10 +16,15 @@
 ## 👦🏻💻 Message from master branch
 
 Hey folks 👋🏻, If you have basic knowledge about
+
 #### M - MongoDB
+
 #### E - Express
+
 #### R - React
+
 #### N - Node
+
 you can contribute in this repository. If you have any innovative idea, you are most welcome. Come and build this together.
 
 ## Introduction to the Project 🖥🖱
@@ -27,3 +32,43 @@ you can contribute in this repository. If you have any innovative idea, you are 
 be-social\_ is a kind of portfolio project from the student, by the student & for the student. This project aims to build a social media with basic purposes. Like post, like, comment, view profile, add experiences and a lot more. If you can give any kind of contribution, you are welcome and I will add your name in the contributors list.
 
 You can contact me on : Email - starcdwivedi@gmail.com
+
+## How to run it on your local machine ?
+
+This project is using _yarn_ as its package manager. I you don't have yarn on your local machine the you can download it [here](https://classic.yarnpkg.com/en/docs/install#windows-stable) . Once yarn is installed you are good to go.
+
+Now go inside the project directory through command line (or terminal) and run command
+
+### for server
+
+#### `yarn`
+
+This will install all the dependencies related to server
+
+### for client (or front-end)
+
+Go inside the client directory and run command yarn
+
+#### `yarn`
+
+This will install all the dependencies related to client (or front-end).
+
+After the installation of dependencies ready to run it on your local machine.
+
+### To run full stack
+
+Go inside the main directory (means _be-social\__ folder) through command line and type command
+
+#### `yarn run dev`
+
+### To run front-end only
+
+Go inside the client directory (means _client_ folder) through command line and type command
+
+#### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
