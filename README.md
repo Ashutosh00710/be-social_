@@ -33,7 +33,7 @@ be-social\_ is a kind of portfolio project from the student, by the student & fo
 
 You can contact me on : Email - starcdwivedi@gmail.com
 
-## How to run it on your local machine ?
+## How to run 🏃🏻‍♂️ it on your local machine 💻 ?
 
 This project is using _yarn_ as its package manager. I you don't have yarn on your local machine the you can download it [here](https://classic.yarnpkg.com/en/docs/install#windows-stable) . Once yarn is installed you are good to go.
 
