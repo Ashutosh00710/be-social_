@@ -63,6 +63,21 @@ Go inside the main directory (means <b>be-social\_</b> folder) through command l
 
 ### To run front-end only
 
+Before you run front-end if you are not using Redux Devtools Extension in your browser then
+Go to client/src/redux/store.js
+
+```javascript
+const store = createStore(
+  rootReducer,
+
+  compose(
+    applyMiddleware(...middleware),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() //Remove this line
+  )
+);
+}
+```
+
 Go inside the client directory (means <b>client</b> folder) through command line and type command
 
 #### `yarn start`

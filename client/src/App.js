@@ -2,6 +2,7 @@ import React from "react";
 import SignInSide from "./pages/signin/signin.component.jsx";
 import SignUp from "./pages/signup/signup.component.jsx";
 import Posts from "./pages/posts.component.jsx";
+import FormTextFields from "./pages/create-profile/create-profile.component";
 import { default as Profile } from "./pages/profile.component";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/posts" component={Posts} />
         <Route path="/profile" component={Profile} />
+        <Route path="/create-profile" component={FormTextFields} />
       </Switch>
     </>
   );
