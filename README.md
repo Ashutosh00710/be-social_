@@ -57,13 +57,13 @@ After the installation of dependencies ready to run it on your local machine.
 
 ### To run full stack
 
-Go inside the main directory (means \_be-social\_\_ folder) through command line and type command
+Go inside the main directory (means <b>be-social\_</b> folder) through command line and type command
 
 #### `yarn run dev`
 
 ### To run front-end only
 
-Go inside the client directory (means _client_ folder) through command line and type command
+Go inside the client directory (means <b>client</b> folder) through command line and type command
 
 #### `yarn start`
 
@@ -75,6 +75,6 @@ You will also see any lint errors in the console.
 
 #### The front-end of this project is using react-router-dom for front-end routing so following end-points are available
 
-[http://localhost:3000/signup](http://localhost:3000/signup) SignUp form is available here
-[http://localhost:3000/posts](http://localhost:3000/posts) Posts are available here
+[http://localhost:3000/signup](http://localhost:3000/signup) SignUp form is available here<br />
+[http://localhost:3000/posts](http://localhost:3000/posts) Posts are available here<br />
 [http://localhost:3000/profile](http://localhost/profile:3000) Profile is available here
