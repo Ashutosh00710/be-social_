@@ -75,6 +75,8 @@ You will also see any lint errors in the console.
 
 #### The front-end of this project is using react-router-dom for front-end routing so following end-points are available
 
-[http://localhost:3000/signup](http://localhost:3000/signup) SignUp form is available here<br />
-[http://localhost:3000/posts](http://localhost:3000/posts) Posts are available here<br />
-[http://localhost:3000/profile](http://localhost/profile:3000) Profile is available here
+| End-Point                                                      | Page Avilable                 |
+| -------------------------------------------------------------- | ----------------------------- |
+| [http://localhost:3000/signup](http://localhost:3000/signup)   | SignUp form is available here |
+| [http://localhost:3000/posts](http://localhost:3000/posts)     | Posts are available here      |
+| [http://localhost:3000/profile](http://localhost/profile:3000) | Profile is available here     |
