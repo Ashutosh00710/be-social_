@@ -63,7 +63,7 @@ Go inside the main directory (means <b>be-social\_</b> folder) through command l
 
 ### To run front-end only
 
-Before you run front-end if you are not using Redux Devtools Extension in your browser then
+Before you run front-end if you are not using Redux Devtools Extension in your browser then</br>
 Go to client/src/redux/store.js
 
 ```javascript
@@ -77,7 +77,7 @@ const store = createStore(
 );
 ```
 
-~window.\__REDUX_DEVTOOLS_EXTENSION__ && window.\__REDUX_DEVTOOLS_EXTENSION__()~ 
+~window.\_\_REDUX_DEVTOOLS_EXTENSION** && window.\_\_REDUX_DEVTOOLS_EXTENSION**()~
 
 Go inside the client directory (means <b>client</b> folder) through command line and type command
 
