@@ -78,7 +78,7 @@ const store = createStore(
 }
 ```
 
-## `~window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()~`
+~window.\__REDUX_DEVTOOLS_EXTENSION__ && window.\__REDUX_DEVTOOLS_EXTENSION__()~ 
 
 Go inside the client directory (means <b>client</b> folder) through command line and type command
 
