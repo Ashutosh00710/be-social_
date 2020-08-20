@@ -11,6 +11,7 @@ import { clearCurrentProfile } from "./redux/actions/profileActions";
 import store from "../src/redux/store";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar/navbar.component";
+import PrivateRoute from "./components/privateroute.component";
 
 // Check for token
 if (localStorage.jwtToken) {
@@ -41,8 +42,8 @@ function App() {
         <Route exact path="/" component={SignInSide} />
         <Route path="/signup" component={SignUp} />
         <Route path="/posts" component={Posts} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/create-profile" component={FormTextFields} />
+        <PrivateRoute path="/profile" component={Profile} />
+        <PrivateRoute path="/create-profile" component={FormTextFields} />
       </Switch>
     </>
   );

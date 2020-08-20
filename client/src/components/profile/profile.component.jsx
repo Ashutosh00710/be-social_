@@ -1,5 +1,10 @@
 import React from "react";
-import { CardHeader, Typography } from "@material-ui/core";
+import {
+  CardHeader,
+  Typography,
+  CircularProgress,
+  Button,
+} from "@material-ui/core";
 import BubbleChartIcon from "@material-ui/icons/BubbleChart";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import Tab from "./tab";
@@ -13,6 +18,7 @@ import {
 } from "./profile.styles";
 import { connect } from "react-redux";
 import { getCurrentUser } from "../../redux/actions/profileActions";
+import PropTypes from "prop-types";
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -20,34 +26,75 @@ class Profile extends React.Component {
   }
 
   render() {
-    return (
-      <ProfileContainer>
-        <Cover image="https://coverfiles.alphacoders.com/107/107369.jpg" />
-        <Header />
-        <CardHeader
-          avatar={
-            <ProfilePic src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZYEi7-MP_fJqbD6yYkrykoIOo-65rj95h2lyI2dPQ8sDtgj9cpA" />
-          }
+    const { user } = this.props.auth;
+
+    const { loading, profile } = this.props.profile;
+
+    let dashboardContent;
+
+    if (profile === null || loading) {
+      dashboardContent = (
+        <CircularProgress
+          style={{ marginLeft: "50%", marginTop: "4rem", marginBottom: "4rem" }}
         />
-        <Username>Iron Man</Username>
-        <Content>
-          <BubbleChartIcon
-            style={{ marginRight: "0.7rem", color: "#1a6fc3" }}
-          />
-          <Typography>
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
-          </Typography>
-        </Content>
-        <Content>
-          <LocationOnIcon style={{ marginRight: "0.7rem", color: "#1a6fc3" }} />
-          <Typography>Washington</Typography>
-        </Content>
-        <Tab />
-      </ProfileContainer>
-    );
+      );
+    } else {
+      if (Object.keys(profile).length > 0) {
+        dashboardContent = (
+          <>
+            <Cover image="https://coverfiles.alphacoders.com/107/107369.jpg" />
+            <Header />
+            <CardHeader avatar={<ProfilePic src={user.avatar} />} />
+            <Username>{user.name}</Username>
+            <Content>
+              <BubbleChartIcon
+                style={{ marginRight: "0.7rem", color: "#1a6fc3" }}
+              />
+              <Typography>{profile.bio}</Typography>
+            </Content>
+            <Content>
+              <LocationOnIcon
+                style={{ marginRight: "0.7rem", color: "#1a6fc3" }}
+              />
+              <Typography>{profile.location}</Typography>
+            </Content>
+            <Tab />
+          </>
+        );
+      } else {
+        dashboardContent = (
+          <div style={{ margin: "3rem" }}>
+            <Typography style={{ marginBottom: "1rem" }}>
+              Welcome {user.name}
+            </Typography>
+            <Typography style={{ marginBottom: "1rem" }}>
+              You haven't set your profile yet
+            </Typography>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => (window.location.href = "/create-profile")}
+            >
+              Create Your Profile
+            </Button>
+          </div>
+        );
+      }
+    }
+
+    return <ProfileContainer>{dashboardContent}</ProfileContainer>;
   }
 }
 
-export default connect(null, { getCurrentUser })(Profile);
+Profile.propTypes = {
+  getCurrentUser: PropTypes.func.isRequired,
+  profile: PropTypes.object.isRequired,
+  auth: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  profile: state.profile,
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps, { getCurrentUser })(Profile);
