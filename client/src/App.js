@@ -6,7 +6,8 @@ import FormTextFields from "./pages/create-profile/create-profile.component";
 import { default as Profile } from "./pages/profile.component";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
-import { setCurrentUser } from "./redux/actions/authActions";
+import { setCurrentUser, logoutUser } from "./redux/actions/authActions";
+import { clearCurrentProfile } from "./redux/actions/profileActions";
 import store from "../src/redux/store";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar/navbar.component";
@@ -19,6 +20,17 @@ if (localStorage.jwtToken) {
   const decoded = jwt_decode(localStorage.jwtToken);
   //Set user and isAuthenticated
   store.dispatch(setCurrentUser(decoded));
+
+  //Check if token is expired
+  const currentTime = Date.now() / 1000;
+  if (decoded.exp < currentTime) {
+    //Logout User
+    store.dispatch(logoutUser());
+    //Clear current profile
+    store.dispatch(clearCurrentProfile());
+    //Redirect to login
+    window.location.href = "/login";
+  }
 }
 
 function App() {

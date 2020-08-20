@@ -1,6 +1,13 @@
 import React from "react";
 import Post from "../components/post-card/post.component";
 
-const PostPage = () => <Post />;
+const PostPage = () => {
+  return (
+    <>
+      <Post />
+      <Post />
+    </>
+  );
+};
 
 export default PostPage;
