@@ -66,18 +66,17 @@ Go inside the main directory (means <b>be-social\_</b> folder) through command l
 Before you run front-end if you are not using Redux Devtools Extension in your browser then</br>
 Go to client/src/redux/store.js
 
-```javascript
+```diff
 const store = createStore(
   rootReducer,
 
-  compose(
-    applyMiddleware(...middleware),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() //Remove this line
-  )
+-  compose(
+-    applyMiddleware(...middleware),
+-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+-  )
++ applyMiddleware(...middleware)
 );
 ```
-
-~window.\_\_REDUX_DEVTOOLS_EXTENSION\_\_ && window.\_\_REDUX_DEVTOOLS_EXTENSION\_\_()~
 
 Go inside the client directory (means <b>client</b> folder) through command line and type command
 
