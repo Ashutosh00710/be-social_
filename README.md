@@ -17,7 +17,7 @@
 
 Hey folks 👋🏻, If you have basic knowledge about
 
-#### M - MongoDB
+#### M - MongoD
 
 #### E - Express
 
