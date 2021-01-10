@@ -55,7 +55,7 @@ This will install all the dependencies related to client (or front-end).
 
 After the installation of dependencies ready to run it on your local machine.
 
-### To run full stack
+### To run full stack development
 
 Go inside the main directory (means <b>be-social\_</b> folder) through command line and type command
 
