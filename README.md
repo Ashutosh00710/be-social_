@@ -39,7 +39,7 @@ This project is using _yarn_ as its package manager. If you don't have yarn on y
 
 Now go inside the project directory through command line (or terminal) and run command
 
-### for server
+### for server side
 
 #### `yarn`
 
